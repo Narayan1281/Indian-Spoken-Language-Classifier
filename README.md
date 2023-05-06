@@ -30,10 +30,15 @@ No. of samples in Prasar Bharti Training, Test and youtube test datasets are as 
   
 - **Confusion Matrix for best model configurations**
   * UBM-GMM: full covariance, 2 clusters, Yt_test
-  <img src="plots/confusion_matix-full_ubm-gmm(best)_pb.png"  width="300" height="300">
-
+  ![confusion matrix](plots/confusion_matix-full_ubm-gmm(best)_pb.png)
+  
   * GMM: full covariance, 10 clusters, Pb_test
-    <img src="plots/confusion_matix-full_gmm(best)_pb.png"  width="300" height="300">
+  ![confusion matrix](plots/confusion_matix-full_gmm(best)_pb.png)
+
+- Obeserving above confusion matrix we can see that higher percentage of ```Punjabi``` language has been misclassified as ```Hindi``` and ```Gujrati```. 
+
+- Therefore we could infer that ```Punjabi```, ```Hindi``` and ```Gujrati``` are confusable languages to our model.
+
 
 
 
