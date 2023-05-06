@@ -1,5 +1,5 @@
 # Indian-spoken-language-classifier
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Narayan1281/Indian-Spoken-Language-Classifier/blob/main/sound_classifier.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Narayan1281/Indian-spoken-language-classifier/blob/main/sound_classifier.ipynb)
 
 
 The goal here is to perform spoken language identification (LID) experiments using machine learning techniques such as GMM and UBM-GMM and develop a language identification (LID) system.
