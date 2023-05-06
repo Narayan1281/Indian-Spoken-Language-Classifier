@@ -1,6 +1,8 @@
 # Indian-spoken-language-classifier
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+        :target: https://colab.research.google.com/drive/12RrBgBJSg4zayS6JYX_kYsGkfsn0Z8Ge?usp=sharing
 
-The goal here is to perform spoken language identification (LID) experiments using machine learning techniques such as GMM and UBM-GMM. 
+The goal here is to perform spoken language identification (LID) experiments using machine learning techniques such as GMM and UBM-GMM and develop a language identification (LID) system.
 
 ## Dataset Information:
 
@@ -35,10 +37,17 @@ No. of samples in Prasar Bharti Training, Test and youtube test datasets are as 
   * GMM: full covariance, 10 clusters, Pb_test
   ![confusion matrix](plots/confusion_matix-full_gmm(best)_pb.png)
 
-- Obeserving above confusion matrix we can see that higher percentage of ```Punjabi``` language has been misclassified as ```Hindi``` and ```Gujrati```. 
+- Obeserving above confusion matrices we can see that higher percentage of ```Punjabi``` language has been misclassified as ```Hindi``` and ```Gujrati```, in case of Pb_Test wheras in case of Yt_test a large portion of ```Marathi``` is misclassified as ```Punjabi``` and ```Telugu```. 
 
-- Therefore we could infer that ```Punjabi```, ```Hindi``` and ```Gujrati``` are confusable languages to our model.
+- Therefore, we could infer that ```Punjabi```, ```Hindi``` and ```Gujrati``` are confusable languages to our model. Also, ```Marathi``` is confusable with ```Punjabi``` and ```Telugu``` based on Yt_test.
 
+## Details about LID Dataset
 
+>  The original dataset contains audios as **.wav** format. 39-dimensional (d = 39) Mel
+frequency cepstral coefficients (MFCCs) are used as the feature representation. These MFCC features are of varying length (depending on the duration
+of the speech utterance from which they were derived). This is achieved by
+using a voice activity detector algorithm (which itself is based on a GMM).
+
+Here, in this project we have used **preprocessed/(csv) dataset**. 
 
 
