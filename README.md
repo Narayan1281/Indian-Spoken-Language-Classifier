@@ -1,6 +1,6 @@
 # Indian-spoken-language-classifier
-.. image:: https://colab.research.google.com/assets/colab-badge.svg
-        :target: https://colab.research.google.com/drive/12RrBgBJSg4zayS6JYX_kYsGkfsn0Z8Ge?usp=sharing
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Narayan1281/Indian-Spoken-Language-Classifier/blob/main/sound_classifier.ipynb)
+
 
 The goal here is to perform spoken language identification (LID) experiments using machine learning techniques such as GMM and UBM-GMM and develop a language identification (LID) system.
 
@@ -41,6 +41,12 @@ No. of samples in Prasar Bharti Training, Test and youtube test datasets are as 
 
 - Therefore, we could infer that ```Punjabi```, ```Hindi``` and ```Gujrati``` are confusable languages to our model. Also, ```Marathi``` is confusable with ```Punjabi``` and ```Telugu``` based on Yt_test.
 
+## Future Aspects
+
+- Implementation of GMM (from scratch) using tensorflow-gpu so that training time can be minimised.
+
+-  Using ```Neural Network based model``` to perform classification task for better accuracies.
+
 ## Details about LID Dataset
 
 >  The original dataset contains audios as **.wav** format. 39-dimensional (d = 39) Mel
@@ -49,5 +55,4 @@ of the speech utterance from which they were derived). This is achieved by
 using a voice activity detector algorithm (which itself is based on a GMM).
 
 Here, in this project we have used **preprocessed/(csv) dataset**. 
-
 
